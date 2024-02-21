@@ -1,0 +1,11 @@
+a=int(input("Enter the first number:\n"))
+b=int(input("Enter the second element:\n"))
+def gcd(a,b):
+    while b:
+        a,b=b, a%b
+        print(a,b)
+    return a
+if a<0 or b<0:
+    print("Enter a positive number:")
+else:
+    print("The gcd of", a, "and", b, "is",gcd(a,b))
